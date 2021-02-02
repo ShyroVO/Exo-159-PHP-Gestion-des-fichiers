@@ -28,4 +28,9 @@ fclose($iho);
  * --> N'oubliez pas de fermer votre fichier.
  */
 // TODO Votre code ici.
-
+$uhl = fopen('lire.txt', 'r');
+echo "5/";
+while (fgetc($uhl) !== (" "||"."||"!"||"?")){
+    echo fgetc($uhl);
+}
+fclose($uhl);
